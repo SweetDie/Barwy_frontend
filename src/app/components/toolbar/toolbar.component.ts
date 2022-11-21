@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
+  public isMenuOpen: boolean = false;
+  searchTerm: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public onSidenavClick(): void {
+    this.isMenuOpen = false;
+  }
 }
